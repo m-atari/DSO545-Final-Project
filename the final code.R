@@ -5,6 +5,8 @@ library(ggplot2)
 library(ggmap)
 ##reading the dataset 
 cat = read_csv("~/Desktop/categorized dictionary with city name.csv")
+##writing the data on a CSV format
+write_csv(cat, "cat.csv")
 
 #city and category 
 citycat = cat%>%
